@@ -164,7 +164,7 @@
           <a class="p-2 text-muted" href="#">Travel</a>
         </nav>
       </div>
-      <button class="btn btn-primary" onclick="jumbotron()">click</button>
+      <button class="btn btn-primary" onclick="colJumbotron()">click</button>
       <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
           <h1 class="display-4 font-italic">
@@ -494,9 +494,10 @@
       };
       //EX13) Write a function to change the background of the jumbotron
 
-      const jumbotron = document.querySelector(".jumbotron");
+      const jumbotron = document.querySelector("div.jumbotron");
       let colJumbotron = function () {
-        jumbotron.style.background = red;
+        jumbotron.classList.remove("bg-dark");
+        jumbotron.style.backgroundColor = "red";
       };
       //EX14) Write a function to change the color of the main title
       //EX15) Write a function to change the column size for post headings
